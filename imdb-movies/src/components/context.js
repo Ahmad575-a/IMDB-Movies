@@ -1,6 +1,6 @@
 import React, { useState, useContext} from 'react'
 import useFetch from './useFetch'
-export const API_ENDPOINT = `https://www.omdbapi.com/?apikey=6a18bc38`
+export const API_ENDPOINT = process.env.REACT_APP_API_URL
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
